@@ -10,7 +10,7 @@
     "start": "ts-node src/index.ts",
     "build": "tsc ./**/*.ts",
     "lint": "eslint ./**/*.{js,jsx,ts,tsx}",
-    "types": "yarn tsc --noEmit",
+    "types": "tsc ./**/*.ts --noEmit",
     "format": "pretty-quick --staged",
     "format-all": "prettier --write ./**/*.{js,jsx,ts,tsx,json}",
     "prepare": "husky install"
@@ -27,6 +27,7 @@
     "prettier": "^2.7.1",
     "pretty-quick": "^3.1.3",
     "ts-node": "^10.9.1",
+    "tsc": "^2.0.4",
     "tslib": "^2.4.0",
     "typescript": "^4.7.4"
   },
