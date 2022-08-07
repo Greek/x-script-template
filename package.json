@@ -8,7 +8,8 @@
   "private": true,
   "scripts": {
     "start": "ts-node src/index.ts",
-    "build": "tsc",
+    "build-ts": "tsc",
+    "build": "yarn run lint && yarn run types && tsc",
     "lint": "eslint ./**/*.{js,jsx,ts,tsx}",
     "types": "tsc --noEmit",
     "format": "pretty-quick --staged",
