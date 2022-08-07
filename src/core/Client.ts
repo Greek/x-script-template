@@ -16,7 +16,7 @@ export default class Program {
    *
    * @public
    */
-  public doSomething(arg1) {
+  public doSomething(arg1: unknown) {
     return 'Doing something. This is ' + arg1 + '!';
   }
 }
